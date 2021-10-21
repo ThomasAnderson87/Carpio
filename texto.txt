@@ -1,0 +1,8 @@
+cores do site: 
+#413659; 
+#542673;
+#C7ADD9;
+#F2BB77;
+#F26F63;
+
+fontes:

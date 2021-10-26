@@ -1,5 +1,6 @@
 header{
    width: 100%;
+   display: flex;
    position: fixed;
    max-height: 77px;
    box-sizing: border-box;
@@ -16,7 +17,7 @@ header{
    padding: 0.5rem 1rem;
 }
 
-.nav-bar > li{
+.container .nav-bar > li{
    padding-right: 1.5rem;
 }
 
@@ -30,4 +31,54 @@ header{
 .nav-bar > li > a:hover{
    color: #C7ADD9;
    border-bottom: 1px solid #C7ADD9;
+}
+
+.mobile-menu div{
+   width: 32px;
+   height: 2px;
+   background: #fff;
+   margin: 8px;
+}
+
+.mobile-menu{
+   cursor: pointer;
+   display: none;
+}
+
+@media screen and (max-width: 999px){
+   
+   header{
+      justify-content: space-around;
+      align-content: center;
+      max-height: 154px;
+   }
+
+   #div-logo{
+      flex-grow: 15;
+   }
+
+   .nav-bar{
+      position: absolute;
+      top: 85px;
+      right: 0;
+      width: 45vw;
+      height: 92vh;
+      background: #413659;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+   }
+
+   .nav-bar li{
+      padding: 1rem;
+   }
+
+   .mobile-menu{
+      display: block;
+      flex-grow: 1;
+   }
+
+   .invisivel{
+      display: none;
+   }
 }

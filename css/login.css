@@ -1,0 +1,39 @@
+.main-page{
+    margin-top: 20vw ;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+.conteiner-form{
+    display: flex;
+    justify-content: space-around;
+        
+}
+
+#login{
+    width: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+}
+
+#cadastro{
+    width: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input, label{
+    margin-top: 0.7rem;
+}
+
+input{
+    padding: 0.7rem;
+    border:none;
+    border-bottom: 1px solid #413659;
+    background: transparent;
+
+}
+input:hover{
+    background-color: rgba(255, 255, 255, 0.35);
+}

@@ -16,14 +16,16 @@ body{
 }
 
 main{
-   background-color: rgba(255, 255, 255, 0.767);
-   width: 80%;
-   padding: 1rem;
+   background-color: rgba(255, 255, 255, 0.911);
+   width: 60%;
    border-radius: 0.5rem;
+   padding: 1rem 0;
 }
 
 @media screen and (max-width: 999px){
    
+   main{
+      width: 90%;
+   }
 
-   
 }

@@ -6,7 +6,7 @@
 .conteiner-form{
     display: flex;
     justify-content: space-around;
-        
+    font-weight: bold ;    
 }
 
 #login{
@@ -36,4 +36,17 @@ input{
 }
 input:hover{
     background-color: rgba(255, 255, 255, 0.35);
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.botao{
+    margin-top: 1rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F2BB77;
 }

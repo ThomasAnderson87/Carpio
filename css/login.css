@@ -1,12 +1,12 @@
 .main-page{
-    margin-top: 20vw ;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    margin-top: 10rem ;
 }
 
 .conteiner-form{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    font-weight: bold ;    
+    justify-content: center;
+    font-weight: bold ;
 }
 
 #login{
@@ -14,6 +14,9 @@
     padding: 1rem;
     display: flex;
     flex-direction: column; 
+    border-right: 1px solid black;
+    padding: 5rem;
+
 }
 
 #cadastro{
@@ -21,10 +24,12 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    border-left: 1px solid black;
+    padding: 5rem;
 }
 
 input, label{
-    margin-top: 0.7rem;
+    margin-top: 0.3rem;
 }
 
 input{
@@ -32,6 +37,7 @@ input{
     border:none;
     border-bottom: 1px solid #413659;
     background: transparent;
+    margin-bottom: 1.5rem;
 
 }
 input:hover{
@@ -44,9 +50,17 @@ h1{
 }
 
 .botao{
-    margin-top: 1rem;
     height: 3rem;
     border: none;
     border-radius: 10px;
     background-color: #F2BB77;
+    font-weight: bold;
+    color:;
+
+}
+
+@media screen and (min-width:1920px) {
+    .main-page{
+        max-width:960px ;
+    }    
 }

@@ -1,30 +1,32 @@
 .main-page{
-    margin-top: 20vw ;
-    font-family: Verdana,Arial,Helvetica,sans-serif;
+    margin-top: 10rem ;
 }
 
 .conteiner-form{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-        
+    justify-content: center;
+    font-weight: bold ;
 }
 
 #login{
     width: 300px;
-    padding: 1rem;
     display: flex;
     flex-direction: column; 
+    padding: 5rem;
+
 }
 
 #cadastro{
     width: 300px;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
+    border-left: 1px solid black;
+    padding: 5rem;
 }
 
 input, label{
-    margin-top: 0.7rem;
+    margin-top: 0.3rem;
 }
 
 input{
@@ -32,8 +34,34 @@ input{
     border:none;
     border-bottom: 1px solid #413659;
     background: transparent;
+    margin-bottom: 1.5rem;
 
 }
 input:hover{
     background-color: rgba(255, 255, 255, 0.35);
+}
+
+h1{
+    font-size: 25px;
+    margin-bottom: 3rem;
+}
+
+.botao{
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #F2BB77;
+    font-weight: bold;
+}
+
+.botao:hover{
+    transform: scale(1.05);
+    background-color: #542673;
+    color: white;
+}
+
+@media screen and (min-width:1920px) {
+    .main-page{
+        max-width:960px ;
+    }    
 }

@@ -46,6 +46,7 @@
 
 .redes-sociais div{
    display: flex;
+   width: 188px;
 }
 
 .redes-sociais div > a{

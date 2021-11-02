@@ -1,0 +1,113 @@
+.main-page {
+   box-sizing: border-box;
+   padding: 0 1rem 1rem 1rem;
+}
+
+.main-page > h1{
+   font-size: 2rem;
+   margin: 2rem 0;
+   padding: 0.2rem 0;
+   border-bottom: 1px solid gray;
+}
+
+.filtro-container{
+   margin: 1rem 0;
+}
+
+.filtro{
+   margin-top: 0.2rem;
+   font-size: 1.1rem;
+   padding: 0.2rem;
+}
+
+.lista-filmes{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+.filmes{
+   width: 30%;
+   margin: 1rem 1.6%;
+   display: flex;
+   transition: 0.3s;
+}
+
+.filmes:hover :is(.titulo){
+   color: #F26F63;
+}
+
+.filmes:hover :is(.filmes > img){
+   border: 1px solid #F26F63;
+}
+
+
+.filmes > img {
+   border: 1px solid gray;
+   border-radius: 5px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.conteudo-filmes{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-grow: 1;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.titulo{
+   padding: 1.1rem;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+.rating-star{
+   position: absolute;
+   bottom: 1.5rem;
+   display: flex;
+   transform: rotateY(180deg);
+}
+
+.rating-star > input{
+   display: none;
+}
+
+.rating-star > label{
+   display: block;
+   cursor: pointer;
+   width: 25px;
+}
+
+.rating-star > label::before{
+   font-family: fontAwesome;
+   content: '\f005';
+   position: relative;
+   display: block;
+   font-size: 1.5rem;
+   color: #101010;
+}
+
+.rating-star > label::after{
+   font-family: fontAwesome;
+   content: '\f005';
+   position: absolute;
+   display: block;
+   font-size: 1.5rem;
+   color: #F2BB77;
+   top: 0;
+   opacity: 0;
+   transition: .3s;
+   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.493);
+
+}
+
+.rating-star > label:hover:after,
+.rating-star label:hover ~ label::after,
+.rating-star input:checked ~ label::after{
+   opacity: 1;
+}

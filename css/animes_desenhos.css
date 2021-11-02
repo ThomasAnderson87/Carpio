@@ -27,7 +27,11 @@
     transition: 0.2s;
 }
 
+.itens > img{
+    border-radius: 5px;
+}
+
 .itens:hover{
     background-color: #542673;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }

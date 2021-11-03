@@ -68,6 +68,7 @@ header{
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      transition: all 0.3s ease-in-out;
    }
 
    .nav-bar li{
@@ -80,6 +81,7 @@ header{
    }
 
    .invisivel{
-      display: none;
+      opacity: 0;
+      transform: translateX(45vw);
    }
 }

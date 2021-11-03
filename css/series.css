@@ -1,3 +1,34 @@
+.main-page {
+    box-sizing: border-box;
+    padding: 0 1rem 1rem 1rem;
+ }
+
+.main-page > h1{
+    font-size: 2rem;
+    margin: 2rem 0;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid gray;
+ }
+ 
+ .filtro-container{
+    margin: 1rem 0;
+ }
+ 
+ .filtro{
+    margin-top: 0.2rem;
+    font-size: 1.1rem;
+    padding: 0.2rem;
+ }
+ 
+ .display-none{
+    display: none;
+    transition: 0.3s;
+ }
+ 
+ .invisivel-conteudo{
+    opacity: 0;
+ }
+ 
 .capas{ 
     display: flex;
     justify-content: space-around;
@@ -6,7 +37,7 @@
     
 }
 
-.itens{
+.conteudo{
     border-radius: 0.7rem;
     padding: 0.7rem;
     padding-bottom: 1.3rem;
@@ -29,17 +60,16 @@
     margin-top: 8px;
     font-style: oblique;
 }
-.itens{
+.conteudo{
     transition: 0.2s;
 }
 
-.itens > img{
+.conteudo > img{
     border-radius: 0.5rem;
 }
 
-.itens:hover{
+.conteudo:hover{
     background-color: #542673;
     transform: scale(1.01);
     color: white;
 }
-

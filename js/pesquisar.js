@@ -1,7 +1,7 @@
 const filtro = document.querySelector('.filtro')
 
 filtro.addEventListener('input', function(){
-   let conteudo = document.querySelectorAll('.conteudo')
+   const conteudo = document.querySelectorAll('.conteudo')
 
    conteudo.forEach(function(elemento){
       let titulo = elemento.querySelector('.titulo').textContent

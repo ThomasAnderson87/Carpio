@@ -20,29 +20,39 @@
    padding: 0.2rem;
 }
 
-.lista-filmes{
+.lista{
    display: flex;
    flex-wrap: wrap;
    width: 100%;
 }
 
-.filmes{
+.conteudo{
    width: 30%;
    margin: 1rem 1.6%;
+   padding: 3px;
    display: flex;
-   transition: 0.3s;
+   transition: all 0.3s;
+   box-sizing: border-box;
+   background-color: #f2bb77ec;
+   border-radius: 5px;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
 }
 
-.filmes:hover :is(.titulo){
-   color: #F26F63;
+.conteudo:hover{
+   background-color: #413659de;
+   border-radius: 5px;
 }
 
-.filmes:hover :is(.filmes > img){
-   border: 1px solid #F26F63;
+.conteudo:hover :is(.titulo){
+   color: #F2BB77;
+}
+
+.conteudo:hover :is(.conteudo > img){
+   border: 1px solid #F2BB77;;
 }
 
 
-.filmes > img {
+.conteudo > img {
    border: 1px solid gray;
    border-radius: 5px;
    box-sizing: border-box;
@@ -73,17 +83,17 @@
    transform: rotateY(180deg);
 }
 
-.rating-star > input{
+.rating-star > .inputStar{
    display: none;
 }
 
-.rating-star > label{
+.rating-star > .labelStar{
    display: block;
    cursor: pointer;
    width: 25px;
 }
 
-.rating-star > label::before{
+.rating-star > .labelStar::before{
    font-family: fontAwesome;
    content: '\f005';
    position: relative;
@@ -92,7 +102,7 @@
    color: #101010;
 }
 
-.rating-star > label::after{
+.rating-star > .labelStar::after{
    font-family: fontAwesome;
    content: '\f005';
    position: absolute;
@@ -106,8 +116,23 @@
 
 }
 
-.rating-star > label:hover:after,
-.rating-star label:hover ~ label::after,
-.rating-star input:checked ~ label::after{
+.labelStar:hover:after,
+.labelStar:hover ~ .labelStar::after,
+.inputStar:checked ~ .labelStar::after{
    opacity: 1;
+}
+
+.background{
+   background-color: #413659e8;
+   border-radius: 5px;
+   color: #F2BB77;
+}
+
+.display-none{
+   display: none;
+   transition: 0.3s;
+}
+
+.invisivel-conteudo{
+   opacity: 0;
 }

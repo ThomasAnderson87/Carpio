@@ -1,28 +1,52 @@
 .main-page{
     margin-top: 10rem ;
+    width: 627px;
 }
 
 .conteiner-form{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-weight: bold ;
 }
 
-#login{
+.escolher-login{
+    display: flex;
+    width: 100%;
+}
+
+.faz-login, .faz-cadastro{
+    width: 50%;
+    background-color: #C7ADD9;;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+    padding: 0 .6rem;
+}
+
+.faz-login:hover, .faz-cadastro:hover{
+    color: #f9f9f9;
+    background-color: #413659;
+}
+
+.login-escolhido{
+    color: #f9f9f9;
+    background-color: #413659;
+}
+
+#login, #cadastro{
     width: 300px;
     display: flex;
     flex-direction: column; 
-    padding: 5rem;
-
+    margin: 3rem 0;
+    padding: 0;
 }
 
-#cadastro{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    border-left: 1px solid black;
-    padding: 5rem;
+.display-none{
+    display: none;
 }
 
 input, label{
@@ -43,8 +67,8 @@ input:hover{
 }
 
 h1{
-    font-size: 23px;
-    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
 }
 
 .botao{
@@ -67,4 +91,17 @@ h1{
     .main-page{
         max-width:960px ;
     }    
+}
+
+@media screen and (max-width: 754px) {
+    
+    .main-page{
+        margin-top: 6rem;
+        width: 100%;
+    }
+
+    .conteiner-form{
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -75,7 +75,6 @@
    background-color: #542673;
    transform: scale(1.01);
    color: #F2BB77;
-   z-index: 2;
 }
 
 .box-conteudo{
@@ -83,17 +82,9 @@
    border-radius: 5px;
    display: none;
    width: 300px;
-}
-
-.box-conteudo h3{
-   margin: 1.2rem 0;
-}
-
-.conteudo:hover :is(.box-conteudo){
    position: absolute;
    top: 0;
    right: -330px;
-   display: flex;
    flex-direction: column;
    align-items: center;
    background-color: white;
@@ -101,13 +92,46 @@
    z-index: 1;
 }
 
+.box-conteudo h3{
+   margin: 1.2rem 0;
+}
+
+.x-botao{
+   position: absolute;
+   border: none;
+   box-decoration-break: none;
+   background-color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+   cursor: pointer;
+   color: rgb(66, 66, 66);
+   top: 0;
+   right: 1rem;
+}
+
+.x-botao:hover{
+   color: rgb(206, 54, 54);
+}
+
+.flex-visivel{
+   display: flex;
+}
+
+.z-index{
+   z-index: 3;
+}
+
+.star-bcg{
+   background-color: #542673;
+   transform: scale(1.01);
+   color: #F2BB77;
+   z-index: 3;
+}
+
 @media screen and (max-width: 999px){
 
    .box-conteudo{
       max-width: 152px;
-   }
-
-   .conteudo:hover :is(.box-conteudo){
       position: fixed;
       top: 50%;
       left: 0;

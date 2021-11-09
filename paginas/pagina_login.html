@@ -35,29 +35,40 @@
 
         <main class="main-page">
             <div class="conteiner-form">
-                <form id="login">
-                    <h1>Já tenho conta</h1>
-                    <label for="usuario">E-mail ou Nome de usuário</label>
-                    <input type="text" id="usuario" placeholder="Ex.: gandalf@thewhite.com " required>
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Sua senha" required>                    
-                    <button class="botao" >Login</button>
-                </form>
-                <form id="cadastro">
-                    <h1>Cadastre-se agora!</h1>
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
-                    <label for="username">Nome de usuário</label>
-                    <input type="text" id="username" placeholder="Nome usado para fazer o login" required>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Ex.: gandalf@thewhite.com" required>
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Sua senha" required>
-                    <label for="conf_senha">Confirme a senha</label>
-                    <input type="password" id="conf_senha" placeholder="Confirme sua senha" required>                    
-                    <button class="botao" >Cadastra-se agora!</button>
+               <div class="escolher-login">
+                  <div class="faz-login login-escolhido">
+                     <h1>Já tenho conta</h1>
+                  </div>
+                  <div class="faz-cadastro">
+                     <h1>Cadastre-se agora!</h1>
+                  </div>
+               </div>
 
-                </form>
+                <div class="login-box">
+                   <form id="login">
+                       <label for="usuario">E-mail ou Nome de usuário</label>
+                       <input type="text" id="usuario" placeholder="Ex.: gandalf@thewhite.com " required>
+                       <label for="senha">Senha</label>
+                       <input type="password" id="senha" placeholder="Sua senha" required>
+                       <button class="botao" >Login</button>
+                   </form>
+                </div>
+                <div class="cadastro-box display-none">
+                   <form id="cadastro">
+                       <label for="nome">Nome</label>
+                       <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                       <label for="username">Nome de usuário</label>
+                       <input type="text" id="username" placeholder="Nome usado para fazer o login" required>
+                       <label for="email">E-mail</label>
+                       <input type="email" id="email" placeholder="Ex.: gandalf@thewhite.com" required>
+                       <label for="senha">Senha</label>
+                       <input type="password" id="senha" placeholder="Sua senha" required>
+                       <label for="conf_senha">Confirme a senha</label>
+                       <input type="password" id="conf_senha" placeholder="Confirme sua senha" required>
+                       <button class="botao" >Cadastra-se agora!</button>
+                   </form>
+                </div>
+
             </div>
         </main>
 
@@ -107,4 +118,5 @@
          </footer>
     </body>
     <script src="../js/mobileMenu.js"></script>
+    <script src="../js/escolher-login.js"></script>
 </html>

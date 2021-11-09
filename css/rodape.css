@@ -8,16 +8,19 @@
 .logo-rodape{
    align-self: flex-start;
 }
-
+.logo{
+   width: 65%;
+   margin-top: -1.5rem;
+}
 .conteudo-rodape{
    width: 100%;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    margin: 3rem 0;
 }
 
 .conteudo-rodape > div{
-   width: 10%;
+   width: 20%;
 }
 
 .conteudo-rodape h3{

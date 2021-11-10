@@ -76,17 +76,12 @@ header{
    }
 
    .mobile-menu{
-<<<<<<< Updated upstream
       position: absolute;
       right: 1.5rem;
       width: 45px;
       display: initial;
       justify-self: flex-end;
-=======
-      display: block;
-      flex-grow: 1;
-      z-index: 5;
->>>>>>> Stashed changes
+
    }
 
    .invisivel{

@@ -5,6 +5,7 @@
 
 .main-page > h1{
    font-size: 2rem;
+   font-weight: bold;
    margin: 2rem 0;
    padding: 0.2rem 0;
    border-bottom: 1px solid gray;
@@ -42,6 +43,7 @@
    padding-bottom: 1.3rem;
    background-color: #F2BB77;
    margin-bottom: 3rem;
+   margin: 0rem 0.5rem 3rem 0.5rem;
 }
 
 .titulo{
@@ -82,19 +84,21 @@
 }
 
 .box-conteudo{
-   padding: 15px;
+   padding: 1.5rem;
+   box-sizing: border-box;
    border-radius: 5px;
    display: none;
    width: 300px;
    position: absolute;
    top: 0;
-   right: -330px;
+   right: -300px;
    flex-direction: column;
    align-items: center;
-   background-color: white;
+   background-color: rgba(80, 80, 80, 0.973);
    box-shadow: 0 0 100vw 100vw rgba(0, 0, 0, 0.233);
    z-index: 1;
 }
+
 
 .box-conteudo h3{
    margin: 1.2rem 0;
@@ -103,6 +107,8 @@
 .x-botao{
    position: absolute;
    border: none;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
    box-decoration-break: none;
    background-color: white;
    font-size: 1.5rem;
@@ -135,9 +141,9 @@
 @media screen and (max-width: 999px){
 
    .box-conteudo{
-      max-width: 152px;
+      max-width: 200px;
       position: fixed;
-      top: 50%;
+      top: 30%;
       left: 0;
    }
 }

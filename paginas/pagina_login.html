@@ -8,10 +8,11 @@
         <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/navBar.css">
         <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/perfil.css">k
         <link rel="stylesheet" href="../css/rodape.css">
         <title>Login</title>
     </head>
-    <body class="container">
+    <body class="container ">
         <header>
             <div id="div-logo">
                <img src="../imagens/Logo/carpas_sem_nome_300x300.png" alt="logo_duas_carpas_roxo" class="div-logo" >
@@ -23,11 +24,11 @@
             </div>
             <nav>
                <ul class="container nav-bar invisivel">
-                  <li><a href="../index.html">Home</a></li>
-                  <li><a href="pagina_filmes.html">Filmes</a></li>
-                  <li><a href="pagina_series.html">Séries</a></li>
-                  <li><a href="pagina_animes.html">Animes/Desenhos</a></li>
-                  <li><a href="pagina_login.html">Login</a></li>
+                  <li><a class="menu__link" href="../index.html">Home</a></li>
+                  <li><a class="menu__link" href="pagina_filmes.html">Filmes</a></li>
+                  <li><a class="menu__link" href="pagina_series.html">Séries</a></li>
+                  <li><a class="menu__link" href="pagina_animes.html">Animes/Desenhos</a></li>
+                  <li><a class="menu__link menu--ativo" href="pagina_login.html">Login</a></li>
                </ul>
                <div>
             </nav>
@@ -44,12 +45,12 @@
                   </div>
                </div>
 
-                <div class="login-box">
+                <div class="login-box display__escolhido">
                    <form id="login">
                        <label for="usuario">E-mail ou Nome de usuário</label>
-                       <input type="text" id="usuario" placeholder="Ex.: gandalf@thewhite.com " required>
+                       <input class="form__email" type="text" id="usuario" placeholder="Ex.: gandalf@thewhite.com " required>
                        <label for="senha">Senha</label>
-                       <input type="password" id="senha" placeholder="Sua senha" required>
+                       <input class="form__senha" type="password" id="senha" placeholder="Sua senha" required>
                        <button class="botao" >Login</button>
                    </form>
                 </div>
@@ -60,9 +61,9 @@
                        <label for="username">Nome de usuário</label>
                        <input type="text" id="username" placeholder="Nome usado para fazer o login" required>
                        <label for="email">E-mail</label>
-                       <input type="email" id="email" placeholder="Ex.: gandalf@thewhite.com" required>
+                       <input class="form__email" type="email" id="email" placeholder="Ex.: gandalf@thewhite.com" required>
                        <label for="senha">Senha</label>
-                       <input type="password" id="senha" placeholder="Sua senha" required>
+                       <input class="form__senha" type="password" id="senha" placeholder="Sua senha" required>
                        <label for="conf_senha">Confirme a senha</label>
                        <input type="password" id="conf_senha" placeholder="Confirme sua senha" required>
                        <button class="botao" >Cadastra-se agora!</button>
@@ -71,6 +72,54 @@
 
             </div>
         </main>
+
+        <section class="perfil display-none">
+            <h1 class="perfil__titulo">PERFIL DE <p class="perfil__titulo--nome">...</p></h1>
+
+            <div class="perfil__usuario">
+               <img src="../imagens/perfil/imagem_perfil.png" alt="foto do perfil">
+               <p class="perfil__usuario__nome">Nome Usuário</p>
+            </div>
+
+            <div class="perfil__placar">
+               <div class="perfil__pontos">
+                  <img src="https://cursos.alura.com.br/assets/images/profile/icon-ranking.svg" alt="">
+                  <h3 class="perfil__pontos__conteudo">583º</h3>
+                  <p>Seu ranking entre os usuário</p>
+               </div>
+               <div class="perfil__pontos">
+                  <img src="https://cursos.alura.com.br/assets/images/profile/icon-points.svg " alt="">
+                  <h3 class="perfil__pontos__conteudo">59300</h3>
+                  <p>Pontos acumlados</p>
+               </div>
+               <div class="perfil__pontos">
+                  <img src="https://cursos.alura.com.br/assets/images/profile/icon-exercises.svg" alt="">
+                  <h3 class="perfil__pontos__conteudo">19</h3>
+                  <p>Avaliações feitas</p>
+               </div>
+               <div class="perfil__pontos">
+                  <img src="https://cursos.alura.com.br/assets/images/profile/icon-forum-posts.svg" alt="">
+                  <h3 class="perfil__pontos__conteudo">3</h3>
+                  <p>Posts no forum</p>
+               </div>
+            </div>
+
+            <div class="perfil__salvos">
+               <h2 class="perfil__salvos__titulo">Posts Salvos</h2>
+
+               <div class="perfil__salvos__conteudo">
+                  <div class="container__item">
+                     <img src="../imagens/Jungle_Cruise_Poster.jpg" alt="Poster jungle cruise">
+                     <p class="titulo-lancamentos">Jungle Cruise</p>
+                  </div>
+                  <div class="container__item">
+                     <img src="../imagens/Morte-no-Nilo-.jpg" alt="Poster jungle cruise">
+                     <p class="titulo-lancamentos">Morte no Nilo</p>
+                  </div>
+               </div>
+            </div>
+           
+        </section>
 
         <footer class="rodape">
             <section class="conteudo-rodape">
@@ -82,10 +131,10 @@
                   <h3>inicio</h3>
                   <nav>
                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="paginas/pagina_filmes.html">Filmes</a></li>
-                        <li><a href="paginas/pagina_series.html">Séries</a></li>
-                        <li><a href="paginas/pagina_animes.html">Animes/Desenhos</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="pagina_filmes.html">Filmes</a></li>
+                        <li><a href="pagina_series.html">Séries</a></li>
+                        <li><a href="pagina_animes.html">Animes/Desenhos</a></li>
                         <li><a href="paginas/pagina_login.html">Login</a></li>
                      </ul>
                   </nav>
@@ -102,10 +151,10 @@
                </div>
                <div class="redes-sociais">
                   <div>
-                     <a href="#"><img src="imagens/redes-sociais/facebook.png" alt=""></a>
-                     <a href="#"><img src="imagens/redes-sociais/instagram.png" alt=""></a>
-                     <a href="#"><img src="imagens/redes-sociais/github.png" alt=""></a>
-                     <a href="#"><img src="imagens/redes-sociais/linkedin.png" alt=""></a>
+                     <a href="#"><img src="../imagens/redes-sociais/facebook.png" alt=""></a>
+                     <a href="#"><img src="../imagens/redes-sociais/instagram.png" alt=""></a>
+                     <a href="#"><img src="../imagens/redes-sociais/github.png" alt=""></a>
+                     <a href="#"><img src="../imagens/redes-sociais/linkedin.png" alt=""></a>
                   </div>
                   <a class="botao-contato" href="#">Contato</a>
                </div>
@@ -119,4 +168,5 @@
     </body>
     <script src="../js/mobileMenu.js"></script>
     <script src="../js/escolher-login.js"></script>
+    <script src="../js/login-usuario.js"></script>
 </html>

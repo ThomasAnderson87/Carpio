@@ -1,11 +1,11 @@
 header{
-   z-index: 3;
+   z-index: 5;
    width: 100%;
    display: flex;
    position: fixed;
    max-height: 77px;
    box-sizing: border-box;
-   justify-content: space-evenly;
+   justify-content: space-around;
    align-items: center;
    padding: 0.7rem;
    background-color: #413659;
@@ -14,18 +14,22 @@ header{
 
 .div-logo{
    width: 30%;
-  
 }
 
 .container .nav-bar > li{
    padding-right: 1.5rem;
 }
 
-.nav-bar > li > a{
+.menu__link{
    color:#fff;
    padding: 0.1rem ;
    font-size: 1.2rem;
    text-decoration: none;
+}
+
+.nav-bar .menu--ativo{
+   color: #C7ADD9;
+   border-bottom: 1px solid #C7ADD9;;
 }
 
 .nav-bar > li > a:hover{
@@ -41,6 +45,7 @@ header{
 }
 
 .mobile-menu{
+   width: 40px;
    cursor: pointer;
    display: none;
 }
@@ -48,13 +53,8 @@ header{
 @media screen and (max-width: 999px){
    
    header{
-      justify-content: space-around;
-      align-content: center;
+      justify-content: space-between;
       max-height: 154px;
-   }
-
-   .div-logo{
-      flex-grow: 15;
    }
 
    .nav-bar{
@@ -75,8 +75,11 @@ header{
    }
 
    .mobile-menu{
-      display: block;
-      flex-grow: 1;
+      position: absolute;
+      right: 1.5rem;
+      width: 45px;
+      display: initial;
+      justify-self: flex-end;
    }
 
    .invisivel{

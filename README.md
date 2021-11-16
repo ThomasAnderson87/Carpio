@@ -7,11 +7,11 @@ Funcinalidades do site
 
 ![alt](https://cdn.discordapp.com/attachments/747631789933330443/909986395173572638/unknown.png)
 
-![alt](imagens/Demonstração/sinopse)
+![alt](https://cdn.discordapp.com/attachments/747631789933330443/909985934462844960/unknown.png)
 
-![alt](imagens/Demonstração/buscar)
+![alt](https://cdn.discordapp.com/attachments/747631789933330443/909986817862950952/unknown.png)
 
-![alt](imagens/Demonstração/pos_login)
+![alt](https://cdn.discordapp.com/attachments/747631789933330443/909987078513782804/unknown.png)
 
 
 

@@ -149,7 +149,7 @@ abbr[title] {
    cursor: pointer;
    color: rgb(66, 66, 66);
    top: 0;
-   right: 1rem;
+   right: 0.3rem;
 }
 
 .x-botao:hover{

@@ -22,6 +22,9 @@ btn.forEach((elemento)=> {
          let nomePerfil = document.querySelector('.perfil__usuario__nome')
          nomePerfil.textContent = email
 
+         let perfil = document.querySelector('.menu--ativo')
+         perfil.textContent = 'Perfil'
+
       }else{
          alert('Preencha os dados corretamente')
       }
